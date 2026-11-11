@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a Custom Internet Quote from INFRANETIX SOLUTIONS. Get a personalized broadband or leased line price tailored to your exact requirements." />
+  <title>Request a Custom Quote | INFRANETIX SOLUTIONS</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">IX</div>
+      <div class="logo-text"><span class="name">INFRANETIX</span><span class="tagline">Solutions</span></div>
+    </a>
+    <div class="navbar-menu">
+      <a href="index.html">Home</a><a href="broadband.html">Broadband</a>
+      <a href="leased-line.html">Leased Line</a><a href="enterprise.html">Enterprise</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="support.html">Support</a>
+    </div>
+    <div class="navbar-cta"><a href="quote.html" class="btn btn-primary btn-sm active">Get a Quote</a></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">🏠 Home</a><a href="broadband.html">📶 Home Broadband</a>
+  <a href="leased-line.html">🔗 Dedicated Leased Line</a><a href="enterprise.html">🏢 Enterprise Solutions</a>
+  <a href="about.html">ℹ️ About Us</a><a href="contact.html">📞 Contact Us</a><a href="support.html">🛠️ Support</a>
+  <a href="quote.html" class="btn btn-primary">Get a Custom Quote</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right" style="font-size:0.7rem"></i>
+      <span>Request a Quote</span>
+    </div>
+    <h1>Request a <span style="color:var(--cyan)">Custom Quote</span></h1>
+    <p>No fixed packages. No generic prices. Fill in your details and get a quotation built exactly for your needs.</p>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="section-pad">
+  <div class="container">
+    <div class="quote-wrapper">
+      <!-- Left Info Panel -->
+      <div class="quote-info animate-on-scroll">
+        <div class="quote-info-card">
+          <h3>Why Custom Quotes?</h3>
+          <p>Every customer has unique requirements. We don't believe in one-size-fits-all pricing. Your location, bandwidth needs, and SLA requirements all influence the right plan for you.</p>
+          <div class="quote-features">
+            <div class="quote-feature"><span class="icon">✅</span> Personalized pricing — no overpaying</div>
+            <div class="quote-feature"><span class="icon">✅</span> Exact bandwidth you actually need</div>
+            <div class="quote-feature"><span class="icon">✅</span> SLA tailored to your business criticality</div>
+            <div class="quote-feature"><span class="icon">✅</span> Response within 24 hours</div>
+            <div class="quote-feature"><span class="icon">✅</span> Free site survey before final quote</div>
+            <div class="quote-feature"><span class="icon">✅</span> No commitment required at this stage</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;background:var(--gray-light);border-radius:var(--border-radius);padding:24px;border-left:4px solid var(--electric-blue);">
+          <h4 style="margin-bottom:10px;color:var(--dark-text);">Prefer to talk directly?</h4>
+          <p style="color:var(--gray-text);font-size:0.88rem;margin-bottom:14px;">Our sales team is ready to discuss your requirements over the phone.</p>
+          <a href="tel:7992297991" class="btn btn-primary btn-sm" style="margin-bottom:10px;display:inline-flex;"><i class="fa-solid fa-phone"></i> 7992297991</a><br/>
+          <a href="https://wa.me/917992297991?text=Hi%2C%20I%20want%20a%20custom%20quote%20for%20internet." target="_blank" class="btn btn-sm" style="background:#25d366;color:white;display:inline-flex;margin-top:8px;border-radius:50px;padding:10px 22px;font-weight:600;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="animate-on-scroll" style="animation-delay:0.15s;">
+        <div class="quote-form-card">
+          <h2 style="margin-bottom:6px;color:var(--dark-text);">Fill Your Requirements</h2>
+          <p style="color:var(--gray-text);margin-bottom:32px;font-size:0.92rem;">All fields marked <span style="color:var(--danger);">*</span> are required.</p>
+
+          <!-- Success Message -->
+          <div id="quoteSuccess"></div>
+
+          <form id="quoteForm" novalidate>
+            <!-- Personal Details -->
+            <div style="background:var(--gray-light);border-radius:var(--border-radius);padding:20px 24px;margin-bottom:24px;">
+              <h4 style="color:var(--dark-text);margin-bottom:20px;font-size:1rem;display:flex;align-items:center;gap:8px;"><i class="fa-solid fa-user" style="color:var(--electric-blue);"></i> Personal Details</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullName" class="form-control" placeholder="Your full name" />
+                  <div class="form-error" id="fullNameError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Mobile Number <span class="req">*</span></label>
+                  <input type="tel" id="mobile" class="form-control" placeholder="10-digit mobile" maxlength="10" />
+                  <div class="form-error" id="mobileError"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="your@email.com" />
+                <div class="form-error" id="emailError"></div>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Installation Location / Full Address <span class="req">*</span></label>
+                <textarea id="location" class="form-control" rows="2" placeholder="Full address where internet connection is required..."></textarea>
+                <div class="form-error" id="locationError"></div>
+              </div>
+            </div>
+
+            <!-- Service Requirements -->
+            <div style="background:var(--gray-light);border-radius:var(--border-radius);padding:20px 24px;margin-bottom:24px;">
+              <h4 style="color:var(--dark-text);margin-bottom:20px;font-size:1rem;display:flex;align-items:center;gap:8px;"><i class="fa-solid fa-network-wired" style="color:var(--electric-blue);"></i> Service Requirements</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Service Type <span class="req">*</span></label>
+                  <select id="serviceType" class="form-control">
+                    <option value="">Select service type</option>
+                    <option value="Home Broadband">Home Broadband</option>
+                    <option value="Dedicated Leased Line">Dedicated Leased Line</option>
+                    <option value="Enterprise Internet">Enterprise Internet</option>
+                    <option value="MPLS / SD-WAN">MPLS / SD-WAN</option>
+                    <option value="Not Sure">Not Sure — Advise Me</option>
+                  </select>
+                  <div class="form-error" id="serviceTypeError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Usage Type <span class="req">*</span></label>
+                  <select id="usageType" class="form-control">
+                    <option value="">Select usage type</option>
+                    <option value="Home">Home / Residential</option>
+                    <option value="Small Business">Small Business (1–10 users)</option>
+                    <option value="Business">Business (10–50 users)</option>
+                    <option value="Enterprise">Enterprise (50+ users)</option>
+                  </select>
+                  <div class="form-error" id="usageTypeError"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Required Bandwidth <span class="req">*</span></label>
+                  <select id="bandwidth" class="form-control">
+                    <option value="">Select bandwidth</option>
+                    <option value="10 Mbps">10 Mbps</option>
+                    <option value="25 Mbps">25 Mbps</option>
+                    <option value="50 Mbps">50 Mbps</option>
+                    <option value="100 Mbps">100 Mbps</option>
+                    <option value="200 Mbps">200 Mbps</option>
+                    <option value="500 Mbps">500 Mbps</option>
+                    <option value="1 Gbps">1 Gbps</option>
+                    <option value="2 Gbps">2 Gbps</option>
+                    <option value="5 Gbps">5 Gbps</option>
+                    <option value="10 Gbps">10 Gbps</option>
+                    <option value="Custom">Custom — I'll specify below</option>
+                  </select>
+                  <div class="form-error" id="bandwidthError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Number of Users / Devices</label>
+                  <select id="users" class="form-control">
+                    <option value="">Select approx. users</option>
+                    <option value="1-5">1 – 5</option>
+                    <option value="5-20">5 – 20</option>
+                    <option value="20-50">20 – 50</option>
+                    <option value="50-100">50 – 100</option>
+                    <option value="100+">100+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Options -->
+            <div style="background:var(--gray-light);border-radius:var(--border-radius);padding:20px 24px;margin-bottom:24px;">
+              <h4 style="color:var(--dark-text);margin-bottom:20px;font-size:1rem;display:flex;align-items:center;gap:8px;"><i class="fa-solid fa-sliders" style="color:var(--electric-blue);"></i> Additional Options</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Static IP Required?</label>
+                  <select id="staticIP" class="form-control">
+                    <option value="No">No — Dynamic IP is fine</option>
+                    <option value="Yes - 1 IP">Yes — 1 Static IP</option>
+                    <option value="Yes - Block">Yes — IP Block (multiple IPs)</option>
+                    <option value="Not Sure">Not Sure</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">SLA Requirement</label>
+                  <select id="sla" class="form-control">
+                    <option value="Standard">Standard (Best Effort)</option>
+                    <option value="99% Uptime">99% Uptime SLA</option>
+                    <option value="99.9% Uptime">99.9% Uptime SLA</option>
+                    <option value="Custom SLA">Custom SLA — Discuss</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Additional Requirements / Notes</label>
+                <textarea id="requirements" class="form-control" rows="4" placeholder="Any specific requirements — backup connectivity, VPN setup, managed equipment, specific equipment brands, contract duration, budget range, or anything else we should know..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              <i class="fa-solid fa-paper-plane"></i> Submit My Quotation Request
+            </button>
+            <p style="text-align:center;color:var(--gray-text);font-size:0.8rem;margin-top:14px;">
+              🔒 Your information is private and secure. We will never share your details with third parties.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-pad bg-gray">
+  <div class="container">
+    <div class="section-heading animate-on-scroll">
+      <div class="tag">What Happens Next</div>
+      <h2>After You <span>Submit Your Request</span></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step animate-on-scroll"><div class="step-num">1</div><h4>Request Received</h4><p>We receive your enquiry and assign it to our sales team within 30 minutes.</p></div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.15s"><div class="step-num">2</div><h4>Feasibility Check</h4><p>We verify fiber availability at your location and check technical feasibility.</p></div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.3s"><div class="step-num">3</div><h4>Custom Quote Prepared</h4><p>Our team prepares a personalized quotation based on your exact requirements.</p></div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.45s"><div class="step-num">4</div><h4>Quote Delivered</h4><p>You receive your custom quote within 24 hours via phone/email/WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo" style="margin-bottom:16px;display:inline-flex;">
+          <div class="logo-icon">IX</div>
+          <div class="logo-text"><span class="name">INFRANETIX</span><span class="tagline">Solutions</span></div>
+        </a>
+        <p>High-speed broadband and dedicated internet services across Delhi NCR.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/917992297991" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:info@infranetixsolution.in" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:7992297991" class="social-btn"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <div class="gstin-badge">GSTIN: 07APFPY5655K1Z5</div>
+      </div>
+      <div class="footer-col"><h5>Services</h5><div class="footer-links"><a href="broadband.html">Home Broadband</a><a href="leased-line.html">Dedicated Leased Line</a><a href="enterprise.html">Enterprise Solutions</a><a href="quote.html">Custom Quote</a></div></div>
+      <div class="footer-col"><h5>Quick Links</h5><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="support.html">Support</a></div></div>
+      <div class="footer-col"><h5>Contact</h5>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item"><i class="fa-solid fa-phone fi"></i><div><a href="tel:7992297991">7992297991</a><br/><a href="tel:9311717991">9311717991</a></div></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-envelope fi"></i><a href="mailto:info@infranetixsolution.in">info@infranetixsolution.in</a></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot fi"></i><span>H.No. 694, Bijwasan, New Delhi-61</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 INFRANETIX SOLUTIONS. All Rights Reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917992297991?text=Hi%2C%20I%20want%20a%20custom%20quote." target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-chevron-up"></i></button>
+<div id="chatbotWindow" class="chatbot-window">
+  <div class="chatbot-header"><div class="chatbot-avatar">🤖</div><div class="chatbot-header-text"><div class="name">INFRANETIX Assistant</div><div class="status">Online — Ready to Help</div></div><button class="chatbot-close" onclick="toggleChatbot()">✕</button></div>
+  <div class="chatbot-messages" id="chatMessages"></div><div class="chatbot-options" id="chatOptions"></div>
+  <div class="chatbot-footer"><input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatKey(event)" /><button class="chatbot-send" onclick="sendChatMessage()"><i class="fa-solid fa-paper-plane"></i></button></div>
+</div>
+<button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()"><i class="fa-solid fa-comments"></i></button>
+<script src="assets/js/main.js"></script><script src="assets/js/chatbot.js"></script>
+</body>
+</html>

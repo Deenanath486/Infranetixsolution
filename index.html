@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="INFRANETIX SOLUTIONS – High-Speed Broadband & Dedicated Leased Line Internet for Homes and Businesses in New Delhi. Fast, Reliable, Secure." />
+  <meta name="keywords" content="broadband, leased line, internet service provider, ISP, New Delhi, enterprise internet, high speed internet" />
+  <title>INFRANETIX SOLUTIONS | High-Speed Internet Service Provider</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">IX</div>
+      <div class="logo-text">
+        <span class="name">INFRANETIX</span>
+        <span class="tagline">Solutions</span>
+      </div>
+    </a>
+    <div class="navbar-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="broadband.html">Broadband</a>
+      <a href="leased-line.html">Leased Line</a>
+      <a href="enterprise.html">Enterprise</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="navbar-cta">
+      <a href="quote.html" class="btn btn-primary btn-sm">Get a Quote</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">🏠 Home</a>
+  <a href="broadband.html">📶 Home Broadband</a>
+  <a href="leased-line.html">🔗 Dedicated Leased Line</a>
+  <a href="enterprise.html">🏢 Enterprise Solutions</a>
+  <a href="about.html">ℹ️ About Us</a>
+  <a href="contact.html">📞 Contact Us</a>
+  <a href="support.html">🛠️ Support</a>
+  <a href="quote.html" class="btn btn-primary">Get a Custom Quote</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <!-- Left -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Trusted ISP in New Delhi
+      </div>
+      <h1>Powering Your World With <span>Faster &amp; Reliable</span> Internet</h1>
+      <p class="hero-subtitle">High-Speed Broadband &amp; Dedicated Leased Line for Homes and Businesses. Experience seamless connectivity with 99.9% uptime guarantee.</p>
+      <div class="hero-btns">
+        <a href="quote.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-file-invoice"></i> Request a Custom Quote
+        </a>
+        <a href="support.html" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-headset"></i> Contact Support
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number">500<span>+</span></div>
+          <div class="label">Happy Customers</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <div class="number">99.9<span>%</span></div>
+          <div class="label">Uptime SLA</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <div class="number">10<span>Gbps</span></div>
+          <div class="label">Max Bandwidth</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <div class="number">24<span>/7</span></div>
+          <div class="label">Support</div>
+        </div>
+      </div>
+    </div>
+    <!-- Right Visual -->
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="speed-display">
+          <div class="speed-circle">
+            <span class="speed-num" id="speedCounter">0</span>
+            <span class="speed-unit">Mbps</span>
+          </div>
+          <p class="speed-label">Live Speed Simulation</p>
+        </div>
+        <div class="speed-bars">
+          <div class="speed-bar-item">
+            <div class="speed-bar-label"><span>Download Speed</span><span>940 Mbps</span></div>
+            <div class="speed-bar-track"><div class="speed-bar-fill" style="width:94%"></div></div>
+          </div>
+          <div class="speed-bar-item">
+            <div class="speed-bar-label"><span>Upload Speed</span><span>940 Mbps</span></div>
+            <div class="speed-bar-track"><div class="speed-bar-fill" style="width:94%; animation-delay:0.3s"></div></div>
+          </div>
+          <div class="speed-bar-item">
+            <div class="speed-bar-label"><span>Latency</span><span>&lt;5 ms</span></div>
+            <div class="speed-bar-track"><div class="speed-bar-fill" style="width:98%; animation-delay:0.6s; background: linear-gradient(135deg,#10b981,#00d4ff)"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating badges -->
+      <div class="floating-badge floating-badge-1">
+        <span class="badge-icon">⚡</span>
+        <div>
+          <div style="font-size:0.75rem;color:#64748b;">Avg Speed</div>
+          <div style="font-weight:800;color:#0066ff;">1 Gbps</div>
+        </div>
+      </div>
+      <div class="floating-badge floating-badge-2">
+        <span class="badge-icon">🛡️</span>
+        <div>
+          <div style="font-size:0.75rem;color:#64748b;">Uptime</div>
+          <div style="font-weight:800;color:#10b981;">99.9% SLA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-heading animate-on-scroll">
+      <div class="tag">Our Services</div>
+      <h2>Internet Solutions for <span>Every Need</span></h2>
+      <p>From home broadband to enterprise-grade dedicated lines — we deliver connectivity that keeps you ahead.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <div class="service-card-icon">🏠</div>
+        <h3>Home Broadband</h3>
+        <p>Ultra-fast fiber broadband for homes. Stream, game, and work from home without interruptions. Flexible plans customized to your usage.</p>
+        <a href="broadband.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll" style="animation-delay:0.1s">
+        <div class="service-card-icon">🔗</div>
+        <h3>Dedicated Leased Line</h3>
+        <p>Symmetrical dedicated bandwidth exclusively for your business. Guaranteed speeds, SLA-backed uptime, and static IP addresses.</p>
+        <a href="leased-line.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll" style="animation-delay:0.2s">
+        <div class="service-card-icon">🏢</div>
+        <h3>Enterprise Solutions</h3>
+        <p>Scalable internet infrastructure for large enterprises. Multi-location connectivity, MPLS, SD-WAN, and managed network services.</p>
+        <a href="enterprise.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll" style="animation-delay:0.3s">
+        <div class="service-card-icon">📡</div>
+        <h3>Static IP Services</h3>
+        <p>Get dedicated static IP addresses for your servers, VPN, remote access, and business applications. IPv4 and IPv6 available.</p>
+        <a href="quote.html" class="learn-more">Get Quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll" style="animation-delay:0.4s">
+        <div class="service-card-icon">🔒</div>
+        <h3>Managed Security</h3>
+        <p>DDoS protection, firewall management, and network security services to keep your infrastructure safe and compliant.</p>
+        <a href="enterprise.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card animate-on-scroll" style="animation-delay:0.5s">
+        <div class="service-card-icon">🛠️</div>
+        <h3>24/7 Technical Support</h3>
+        <p>Round-the-clock NOC monitoring and dedicated technical support team. Issues resolved faster with proactive network management.</p>
+        <a href="support.html" class="learn-more">Get Support <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="benefits-grid">
+      <!-- Left: Stats -->
+      <div class="benefits-visual animate-on-scroll">
+        <div class="benefits-stat-card featured">
+          <div class="stat-num">10+ Years</div>
+          <div class="stat-label">Serving Delhi NCR with Reliable Internet</div>
+        </div>
+        <div class="benefits-stat-card">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Active Customers</div>
+        </div>
+        <div class="benefits-stat-card">
+          <div class="stat-num">99.9%</div>
+          <div class="stat-label">Network Uptime</div>
+        </div>
+        <div class="benefits-stat-card">
+          <div class="stat-num">&lt;5ms</div>
+          <div class="stat-label">Average Latency</div>
+        </div>
+        <div class="benefits-stat-card">
+          <div class="stat-num">10Gbps</div>
+          <div class="stat-label">Max Bandwidth</div>
+        </div>
+      </div>
+      <!-- Right: Benefits -->
+      <div>
+        <div class="section-heading white text-left animate-on-scroll" style="text-align:left;margin-bottom:36px;">
+          <div class="tag">Why Choose Us</div>
+          <h2>Why Businesses Trust <span style="color:var(--cyan)">INFRANETIX</span></h2>
+          <p>We deliver more than just internet — we deliver peace of mind.</p>
+        </div>
+        <div class="benefits-list animate-on-scroll">
+          <div class="benefit-item">
+            <div class="benefit-icon">⚡</div>
+            <div class="benefit-text">
+              <h4>Guaranteed Dedicated Speed</h4>
+              <p>Your bandwidth is never shared. You get exactly what you pay for, every single time.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🛡️</div>
+            <div class="benefit-text">
+              <h4>SLA-Backed Uptime</h4>
+              <p>We back our service with written SLA agreements guaranteeing 99.9% uptime with financial penalties.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📞</div>
+            <div class="benefit-text">
+              <h4>24/7 NOC Monitoring</h4>
+              <p>Our Network Operations Center monitors your connection 24x7. Issues are detected and fixed before you notice.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">💰</div>
+            <div class="benefit-text">
+              <h4>Custom Pricing</h4>
+              <p>No one-size-fits-all packages. Every quote is personalized to your exact bandwidth and business requirements.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🚀</div>
+            <div class="benefit-text">
+              <h4>Rapid Installation</h4>
+              <p>Fast survey, quick approval, and professional installation. Get connected within days, not weeks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="process section-pad" id="process">
+  <div class="container">
+    <div class="section-heading animate-on-scroll">
+      <div class="tag">How It Works</div>
+      <h2>Get Connected in <span>4 Simple Steps</span></h2>
+      <p>From enquiry to installation — we make the process smooth and hassle-free.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step animate-on-scroll">
+        <div class="step-num">1</div>
+        <h4>Submit Your Request</h4>
+        <p>Fill our quick quote form with your location, bandwidth needs, and service type.</p>
+      </div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.15s">
+        <div class="step-num">2</div>
+        <h4>Site Survey</h4>
+        <p>Our technical team visits your location for a free feasibility and infrastructure survey.</p>
+      </div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.3s">
+        <div class="step-num">3</div>
+        <h4>Custom Quotation</h4>
+        <p>Receive a personalized price quote tailored specifically to your requirements and location.</p>
+      </div>
+      <div class="process-step animate-on-scroll" style="animation-delay:0.45s">
+        <div class="step-num">4</div>
+        <h4>Go Live!</h4>
+        <p>Professional installation, configuration, and you're connected. Enjoy blazing-fast internet!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-heading animate-on-scroll">
+      <div class="tag">Customer Reviews</div>
+      <h2>What Our <span>Customers Say</span></h2>
+      <p>Real feedback from real customers across Delhi NCR.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="stars">★★★★★</div>
+        <p>"We switched to INFRANETIX for our office in Bijwasan and it has been an absolute game-changer. Zero downtime in 8 months. The support team is incredibly responsive."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div class="author-info">
+            <div class="name">Rajesh Kumar</div>
+            <div class="role">Business Owner, Bijwasan</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll" style="animation-delay:0.1s">
+        <div class="stars">★★★★★</div>
+        <p>"The dedicated leased line with 100Mbps symmetric speed has transformed how we work. Video conferencing, cloud backups — everything runs perfectly. Highly recommended!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AP</div>
+          <div class="author-info">
+            <div class="name">Amit Pathak</div>
+            <div class="role">IT Manager, Enterprise Client</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll" style="animation-delay:0.2s">
+        <div class="stars">★★★★★</div>
+        <p>"As a home user I was worried about pricing but they gave me a custom quote that perfectly fit my budget. Streaming 4K without buffering now. Very happy customer!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PS</div>
+          <div class="author-info">
+            <div class="name">Priya Sharma</div>
+            <div class="role">Home Broadband User</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner animate-on-scroll">
+      <h2>Ready for Faster, More Reliable Internet?</h2>
+      <p>Get a personalized quote tailored to your needs. No hidden charges. No fixed packages. Just the right speed at the right price.</p>
+      <div class="cta-btns">
+        <a href="quote.html" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-file-invoice"></i> Request a Custom Quote
+        </a>
+        <a href="tel:7992297991" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-phone"></i> Call Now: 7992297991
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT BAR ===== -->
+<div class="contact-bar">
+  <div class="container">
+    <div class="contact-bar-inner">
+      <div class="contact-info-items">
+        <a href="tel:7992297991" class="contact-info-item">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;">Call Us</div>
+            <div>7992297991 / 9311717991</div>
+          </div>
+        </a>
+        <a href="mailto:info@infranetixsolution.in" class="contact-info-item">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;">Email</div>
+            <div>info@infranetixsolution.in</div>
+          </div>
+        </a>
+        <div class="contact-info-item">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;">Address</div>
+            <div>H.No. 694, Bijwasan, New Delhi-61</div>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/917992297991?text=Hi%2C%20I%20am%20interested%20in%20your%20internet%20services." target="_blank" class="btn btn-primary">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo" style="margin-bottom:16px;display:inline-flex;">
+          <div class="logo-icon">IX</div>
+          <div class="logo-text">
+            <span class="name">INFRANETIX</span>
+            <span class="tagline">Solutions</span>
+          </div>
+        </a>
+        <p>Providing high-speed broadband and dedicated leased line internet services across Delhi NCR. Trusted by homes and businesses for reliable, secure connectivity.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/917992297991" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:info@infranetixsolution.in" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:7992297991" class="social-btn" title="Call"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="gstin-badge">GSTIN: 07APFPY5655K1Z5</div>
+      </div>
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="broadband.html">Home Broadband</a>
+          <a href="leased-line.html">Dedicated Leased Line</a>
+          <a href="enterprise.html">Enterprise Solutions</a>
+          <a href="enterprise.html">Managed Networking</a>
+          <a href="enterprise.html">Static IP Services</a>
+          <a href="quote.html">Custom Quote</a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="support.html">Customer Support</a>
+          <a href="quote.html">Request a Quote</a>
+          <a href="admin/index.html">Admin Login</a>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot fi"></i>
+            <span>H.No. 694, Ground Floor, Bijwasan, New Delhi – 110061</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone fi"></i>
+            <div>
+              <a href="tel:7992297991">7992297991</a><br/>
+              <a href="tel:9311717991">9311717991</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope fi"></i>
+            <a href="mailto:info@infranetixsolution.in">info@infranetixsolution.in</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock fi"></i>
+            <span>Mon–Sat: 9:00 AM – 7:00 PM<br/>Support: 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024 INFRANETIX SOLUTIONS. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP BUTTON ===== -->
+<a href="https://wa.me/917992297991?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20internet%20services." target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ===== CHATBOT ===== -->
+<div id="chatbotWindow" class="chatbot-window">
+  <div class="chatbot-header">
+    <div class="chatbot-avatar">🤖</div>
+    <div class="chatbot-header-text">
+      <div class="name">INFRANETIX Assistant</div>
+      <div class="status">Online — Ready to Help</div>
+    </div>
+    <button class="chatbot-close" onclick="toggleChatbot()">✕</button>
+  </div>
+  <div class="chatbot-messages" id="chatMessages"></div>
+  <div class="chatbot-options" id="chatOptions"></div>
+  <div class="chatbot-footer">
+    <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatKey(event)" />
+    <button class="chatbot-send" onclick="sendChatMessage()">
+      <i class="fa-solid fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+<button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()" title="Chat with us">
+  <i class="fa-solid fa-comments"></i>
+</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chatbot.js"></script>
+</body>
+</html>
